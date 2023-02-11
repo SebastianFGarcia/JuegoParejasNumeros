@@ -6,7 +6,7 @@ const tiempo = document.getElementById('tiempo');
 const movimientos = document.getElementById('movimientos');
 let acerts = 0;
 let movs = 0;
-let time = 30;
+let time = 45;
 let cantidad = 8;
 let numeros = [];
 let buttonsArray = [];
@@ -24,9 +24,9 @@ level.addEventListener('change', function() {
     numeros = [];
     console.log(cantidad);
     if (cantidad == 8) {
-        tiempo.textContent= time = 30;
+        tiempo.textContent= time = 45;
     } else if (cantidad == 16) {
-        tiempo.textContent = time = 60;
+        tiempo.textContent = time = 180;
     }
     console.log(time);
     for (let i = 0; i < cantidad; i ++) {
@@ -99,9 +99,9 @@ reset.addEventListener('click', function() {
     aciertos.textContent = acerts = 0;
     movimientos.textContent = movs = 0;
     if (cantidad == 8) {
-        tiempo.textContent= time = 30;
+        tiempo.textContent= time = 45;
     } else if (cantidad == 16) {
-        tiempo.textContent = time = 60;
+        tiempo.textContent = time = 180;
     }
     clearInterval(interval);
 });
